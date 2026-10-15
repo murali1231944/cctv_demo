@@ -1,0 +1,32 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large model weights (keep directory structure via .gitkeep if desired)
+models/*.pt
+models/*.pth
+
+# Generated demo data and crops (preserve source videos)
+data/crops/*
+!data/crops/.gitkeep
+data/evidence/*
+!data/evidence/.gitkeep
+
+# Storage and database
+storage/qdrant/*
+!storage/qdrant/.gitkeep
+storage/metadata/*
+!storage/metadata/.gitkeep
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
